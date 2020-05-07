@@ -3,6 +3,8 @@ import logging
 
 logger = logging.getLogger('bot')
 
+DEV_IDS = [173123135321800704, 166337116106653696] # Sven, border
+
 def is_dev():
     async def predicate(ctx):
         return ctx.author.id in DEV_IDS
